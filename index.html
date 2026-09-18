@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jhon Mix – Creative Developer & Designer</title>
+    <meta name="description" content="Jhon Mix is a creative developer and designer specializing in modern web experiences, brand identity, and digital products." />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <!-- Sticky Navigation -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#hero" class="nav__logo">Jhon Mix</a>
+            <ul class="nav__list" id="nav-list">
+                <li><a href="#services" class="nav__link">Services</a></li>
+                <li><a href="#portfolio" class="nav__link">Work</a></li>
+                <li><a href="#testimonials" class="nav__link">Testimonials</a></li>
+                <li><a href="#about" class="nav__link">About</a></li>
+                <li><a href="#contact" class="nav__link nav__cta">Contact</a></li>
+            </ul>
+            <button class="nav__toggle" id="nav-toggle" aria-label="Toggle navigation menu">☰</button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero__overlay"></div>
+        <div class="hero__content container">
+            <h1 class="hero__title">Jhon Mix</h1>
+            <p class="hero__subtitle">Creative Developer & Designer — building experiences that matter.</p>
+            <a href="#portfolio" class="btn btn--primary">See My Work</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section" id="services">
+        <div class="container">
+            <h2 class="section__title">What I Do</h2>
+            <div class="services__grid">
+                <article class="service__card">
+                    <div class="service__icon">🖥️</div>
+                    <h3>Web Development</h3>
+                    <p>Fast, accessible, and responsive websites using modern vanilla techniques.</p>
+                </article>
+                <article class="service__card">
+                    <div class="service__icon">🎨</div>
+                    <h3>UI/UX Design</h3>
+                    <p>Clean interfaces that balance aesthetics with usability and brand identity.</p>
+                </article>
+                <article class="service__card">
+                    <div class="service__icon">📱</div>
+                    <h3>Mobile-First</h3>
+                    <p>Every project is built mobile-first to ensure a flawless experience on any device.</p>
+                </article>
+                <article class="service__card">
+                    <div class="service__icon">⚙️</div>
+                    <h3>Performance</h3>
+                    <p>Optimised code, minimal dependencies, and fast load times out of the box.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="section section--dark" id="portfolio">
+        <div class="container">
+            <h2 class="section__title">Selected Work</h2>
+            <div class="portfolio__grid">
+                <figure class="portfolio__item">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400' viewBox='0 0 600 400'%3E%3Crect width='600' height='400' fill='%23333'/%3E%3Ctext x='300' y='200' text-anchor='middle' fill='%23fff' font-family='sans-serif' font-size='24'%3EProject 1%3C/text%3E%3C/svg%3E" alt="Project 1" loading="lazy" />
+                    <figcaption class="portfolio__overlay">
+                        <h3>Brand Identity</h3>
+                        <p>Complete visual language for a fintech startup.</p>
+                    </figcaption>
+                </figure>
+                <figure class="portfolio__item">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400' viewBox='0 0 600 400'%3E%3Crect width='600' height='400' fill='%23444'/%3E%3Ctext x='300' y='200' text-anchor='middle' fill='%23fff' font-family='sans-serif' font-size='24'%3EProject 2%3C/text%3E%3C/svg%3E" alt="Project 2" loading="lazy" />
+                    <figcaption class="portfolio__overlay">
+                        <h3>E‑Commerce Platform</h3>
+                        <p>Headless storefront with custom cart experience.</p>
+                    </figcaption>
+                </figure>
+                <figure class="portfolio__item">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400' viewBox='0 0 600 400'%3E%3Crect width='600' height='400' fill='%23555'/%3E%3Ctext x='300' y='200' text-anchor='middle' fill='%23fff' font-family='sans-serif' font-size='24'%3EProject 3%3C/text%3E%3C/svg%3E" alt="Project 3" loading="lazy" />
+                    <figcaption class="portfolio__overlay">
+                        <h3>SaaS Dashboard</h3>
+                        <p>Analytics interface for a marketing automation tool.</p>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section" id="testimonials">
+        <div class="container">
+            <h2 class="section__title">What Clients Say</h2>
+            <div class="testimonials__wrapper" id="testimonials-wrapper">
+                <div class="testimonial__card">
+                    <blockquote>“Jhon brought our brand to life with an incredible website. His attention to detail is unmatched.”</blockquote>
+                    <cite>— Sarah Chen, CEO of Lumos</cite>
+                </div>
+                <div class="testimonial__card">
+                    <blockquote>“Working with Jhon was a breeze. He understood our vision and delivered beyond expectations.”</blockquote>
+                    <cite>— Mark Rivera, Product Lead at Orbit</cite>
+                </div>
+                <div class="testimonial__card">
+                    <blockquote>“The performance improvements he made cut our load time by 60%. Highly recommend.”</blockquote>
+                    <cite>— Emily Park, CTO of Stack</cite>
+                </div>
+            </div>
+            <div class="testimonials__controls">
+                <button class="testimonial__btn" id="prev-btn" aria-label="Previous testimonial">←</button>
+                <span class="testimonial__indicator" id="indicator">1 / 3</span>
+                <button class="testimonial__btn" id="next-btn" aria-label="Next testimonial">→</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section section--light" id="about">
+        <div class="container">
+            <h2 class="section__title">About Me</h2>
+            <div class="about__content">
+                <p>I'm Jhon Mix – a creative developer with a passion for turning complex problems into simple, beautiful interfaces. With over 8 years of experience in the industry, I've worked with startups, agencies, and global brands to craft digital products that people love to use.</p>
+                <p>My toolkit includes HTML, CSS, JavaScript, design systems, and performance optimization. I believe in writing clean, maintainable code and delivering pixel-perfect designs.</p>
+                <div class="about__stats">
+                    <div class="stat">
+                        <span class="stat__number">8+</span>
+                        <span class="stat__label">Years Experience</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat__number">50+</span>
+                        <span class="stat__label">Projects Delivered</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat__number">100%</span>
+                        <span class="stat__label">Client Satisfaction</span>
+                    </div>
+                </div>
+                <div class="about__skills">
+                    <span class="skill">HTML5</span>
+                    <span class="skill">CSS3</span>
+                    <span class="skill">JavaScript</span>
+                    <span class="skill">Design Systems</span>
+                    <span class="skill">Performance</span>
+                    <span class="skill">Accessibility</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <div class="container">
+            <h2 class="section__title">Let's Work Together</h2>
+            <p class="contact__text">Have a project in mind? I'd love to hear about it. Reach out and let's make something great.</p>
+            <a href="mailto:hello@jhonmix.dev" class="btn btn--primary">hello@jhonmix.dev</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer__content">
+            <div class="footer__social">
+                <a href="https://github.com/jhonmix" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GitHub</a>
+                <a href="https://linkedin.com/in/jhonmix" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a>
+                <a href="https://twitter.com/jhonmix" target="_blank" rel="noopener noreferrer" aria-label="Twitter">Twitter</a>
+            </div>
+            <p class="footer__copy">&copy; <span id="year"></span> Jhon Mix. All rights reserved.</p>
+            <a href="#hero" class="footer__back" aria-label="Back to top">↑ Back to top</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
